@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <title>博客详情</title>
+    <link rel="stylesheet" href="../static/css/my.css">
+    <link rel="stylesheet" href="../static/css/animate.css">
+    <link rel="stylesheet" href="../static/lib/highlight/styles/default.css">
+</head>
+
+<body>
+<!-- 导航 -->
+<nav class="ui inverted attached segment my-padded-tb-mini my-shadow-small">
+    <div class="ui container">
+        <div class="ui inverted secondary stackable menu">
+            <h2 class="ui teal header item">Blog</h2>
+            <a href="index.html" class="my-margin-top-small my-item item my-mobile-hide"><i class="mini home icon"></i>首页</a>
+            <a href="types.html" class="my-margin-top-small my-item item my-mobile-hide"><i class="mini idea icon"></i>分类</a>
+            <a href="tags.html" class="my-margin-top-small my-item item my-mobile-hide"><i class="mini tags icon"></i>标签</a>
+            <a href="archives.html" class="my-margin-top-small my-item item my-mobile-hide"><i class="mini clone icon"></i>归档</a>
+            <a href="about.html" class="my-margin-top-small my-item item my-mobile-hide"><i class="mini info icon"></i>关于我</a>
+            <div class="right my-margin-top-small my-item item my-mobile-hide">
+                <div class="ui icon inverted transparent input">
+                    <input type="text" placeholder="Search...">
+                    <i class="search link icon"></i>
+                </div>
+            </div>
+        </div>
+        <!-- 手机端菜单栏按钮 -->
+        <a href="#" class="ui menu toggle black icon button my-right-top my-mobile-show">
+            <i class="sidebar icon"></i>
+        </a>
+    </div>
+</nav>
+
+
+<!-- 中间内容 -->
+<div class="my-container-small my-padded-tb-big animated fadeIn">
+    <div class="ui container">
+
+        <!-- 头部 -->
+        <div class="ui top attached segment">
+            <div class="ui horizontal link list">
+                <idv class="item">
+                    <img src="../static/images/index-image/001.png" alt="" width="100"
+                         height="100" class="ui avatar image animated swing">
+                    <div class="content"><a href="#" class="header">杨宇航</a></div>
+                </idv>
+                <div class="item">
+                    <i class="calendar icon"></i> 2020-03-08
+                </div>
+                <div class="item">
+                    <i class="eye icon"></i> 5214
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 图片区域 -->
+        <div class="ui attached segment">
+            <img src="../static/images/index-image/003.png" alt="" class="ui rounded image animated swing">
+        </div>
+
+
+        <!-- 内容 -->
+        <div class="ui js-toc-content attached padded segment">
+            <div class="ui right aligned basic segment">
+                <div class="ui orange label basic">原创</div>
+            </div>
+            <h2 class="ui center aligned header">关于鞠婧祎的简介</h2>
+            <br>
+            <div id="content" class="my-padded-lr-responsive my-padded-tb-tiny">
+                <h3>基本信息</h3>
+                <p>鞠婧祎，1994年6月18日出生于四川省遂宁市，中国内地流行乐女歌手、影视演员。2013年11月2日，以《剧场女神》公演正式出道。
+                    2014年7月26日，获得SNH48第一届总选举第4位 。2015年7月25日，获得SNH48第二届总选举第2位；11月，参与湖南卫视综艺节目
+                    《全员加速中》。2016年1月，主演玄幻剧《九州天空城》；2017年7月，主演古装电视剧《芸汐传》；7月29日，获得SNH48第四届总
+                    选举第1位，成为SNH48首位总选举连霸成员；12月15日，晋升SNH48明星殿堂，并成立个人工作室，正式单飞。</p>
+                <h3>早年经历</h3>
+                <p>1994年6月18日，鞠婧祎出生于四川遂宁，高中就读于四川音乐学院附属中学。2012年，在女生派成都地区竞选中，被评选为人气美女。</p>
+                <h3>组合经历</h3>
+                <p>2013年8月，19岁的鞠婧祎通过层层选拔，从47976名参选者中脱颖而出，成为大型女子偶像团体SNH48的35名二期生成员之一。经过训练与考核，
+                    鞠婧祎于11月以《剧场女神》公演正式出道。
+                <h3>综艺经历</h3>
+                <p>2016年1月，参与芒果TV网络综艺《我是歌手谁来踢馆》和江苏卫视《最强大脑》录制。2月，参与录制湖南卫视元宵喜乐会。3月，随组合发行首
+                    张原创EP《源动力》 。6月， 参与录制江苏卫视大型EDM音乐节目《盖世音雄》。7月，在“比翼齐飞”SNH48第三届偶像年度人气总选举中获得冠军。
+                    8月，赴西班牙马德里拍摄mv《公主披风》。</p>
+                <h3>个人经历</h3>
+                <p>2017年12月15日，鞠婧祎正式升格SNH48明星殿堂，成立个人工作室，从组合中单飞。</p>
+                <p>2018年3月4日，鞠婧祎重回嘉兴路星梦剧院，进行剧场告别演出。</p>
+                </p>
+            </div>
+            <!-- 标签 -->
+            <div class="my-padded-lr-responsive my-padded-tb-tiny">
+                <div class="ui basic teal left pointing label">idol</div>
+            </div>
+            <!-- 赞赏功能 -->
+            <div class="ui center aligned basic segment">
+                <button id="payButton" class="ui orange basic circular button">赞赏</button>
+            </div>
+            <div class="ui payQR flowing popup transition hidden">
+                <div class="ui orange basic label">
+                    <div class="ui images" style="font-size: inherit !important;">
+                        <div class="image">
+                            <img src="../static/images/we-chat.png" alt="" class="ui rounded bordered image" width="120px">
+                            <div>支付宝</div>
+                        </div>
+                        <div class="image">
+                            <img src="../static/images/we-chat.png" alt="" class="ui rounded bordered image" width="120px">
+                            <div>微信</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 博客信息 -->
+        <div class="ui attached message">
+            <div class="ui middle aligned grid">
+                <div class="eleven wide column">
+                    <ui class="list">
+                        <li style="color: dodgerblue">作者：杨宇航（联系作者）</li>
+                        <li style="color: dodgerblue">发表时间：2020-03-10</li>
+                        <li style="color: dodgerblue">版权声明：自由转载-非商用-非衍生-保持署名（创意共享3.0许可证）</li>
+                        <li style="color: dodgerblue">转载：请在文末添加作者微信二维码</li>
+                    </ui>
+                </div>
+                <div class="five wide column">
+                    <img src="../static/images/we-chat.png" alt="" class="ui right floated rounded bordered image" width="110px">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 留言区域 -->
+        <div id="comment-container" class="ui bottom attached segment">
+            <!-- 留言区域列表 -->
+            <div class="ui teal segment">
+                <div class="ui comments">
+                    <h3 class="ui dividing header">留言板</h3>
+                    <div class="comment">
+                        <a class="avatar">
+                            <img src="../static/images/index-image/004.png">
+                        </a>
+                        <div class="content">
+                            <a class="author">九霄</a>
+                            <div class="metadata">
+                                <span class="date">今天 at 5:42PM</span>
+                            </div>
+                            <div class="text">
+                                多漂亮！
+                            </div>
+                            <div class="actions">
+                                <a class="reply">回复</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <a class="avatar">
+                            <img src="../static/images/index-image/004.png">
+                        </a>
+                        <div class="content">
+                            <a class="author">云外</a>
+                            <div class="metadata">
+                                <span class="date">昨天 at 12:30AM</span>
+                            </div>
+                            <div class="text">
+                                <p>谢谢啦！</p>
+                            </div>
+                            <div class="actions">
+                                <a class="reply">回复</a>
+                            </div>
+                        </div>
+                        <div class="comments">
+                            <div class="comment">
+                                <a class="avatar">
+                                    <img src="../static/images/index-image/004.png">
+                                </a>
+                                <div class="content">
+                                    <a class="author">天草</a>
+                                    <div class="metadata">
+                                        <span class="date">今天 15:34PM</span>
+                                    </div>
+                                    <div class="text">
+                                        你是对的！
+                                    </div>
+                                    <div class="actions">
+                                        <a class="reply">回复</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <a class="avatar">
+                            <img src="../static/images/index-image/004.png">
+                        </a>
+                        <div class="content">
+                            <a class="author">大爷</a>
+                            <div class="metadata">
+                                <span class="date">5 天前</span>
+                            </div>
+                            <div class="text">
+                                哈哈哈哈哈
+                            </div>
+                            <div class="actions">
+                                <a class="reply">回复</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 提交留言区域 -->
+            <div class="ui form">
+                <div class="field">
+                    <textarea name="content" placeholder="请输入评论内容..."></textarea>
+                </div>
+                <div class="fields">
+                    <div class="field my-mobile-wide my-margin-bottom-small">
+                        <div class="ui left icon input">
+                            <i class="user icon"></i>
+                            <input type="text" name="nickname" placeholder="姓名">
+                        </div>
+                    </div>
+                    <div class="field my-mobile-wide my-margin-bottom-small">
+                        <div class="ui left icon input">
+                            <i class="mail icon"></i>
+                            <input type="text" name="email" placeholder="邮箱">
+                        </div>
+                    </div>
+                    <div class="field my-mobile-wide my-margin-bottom-small">
+                        <button class="ui teal button my-mobile-wide"><i class="edit icon"></i>发布</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 底部小工具栏 -->
+<div class="my-fixed my-right-bottom my-padded-small">
+    <div class="ui vertical icon buttons">
+        <a href="#comment-container" class="ui teal button">留言</a>
+        <button class="ui teal wechat button icon"><i class="weixin icon"></i></button>
+        <a href="#" class="ui button"><i class="chevron up icon"></i></a>
+    </div>
+</div>
+<!-- 网页二维码生成 -->
+<div id="qrcode" class="ui wechat-qr flowing popup transition hidden" style="width: 130px !important;"></div>
+
+<br>
+<br>
+
+<!--底部footer-->
+<footer th:replace="_fragments :: fotter"></footer>
+
+
+<!-- 框架依赖引入 -->
+<script th:replace="_fragments :: script"></script>
+<script src="../static/lib/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="../static/lib/qrcodejs/qrcode.js"></script>
+    <script>
+        $('.menu.toggle').click(function () {
+            $('.my-item').toggleClass('my-mobile-hide');
+        });
+
+        $('#payButton').popup({
+            popup : $('.payQR.popup'),
+            on : 'click',
+            position : 'top center'
+        });
+        $('.toc.button').popup({
+            popup : $('.toc-container.popup'),
+            on : 'click',
+            position : 'left center'
+        });
+
+        $('.wechat').popup({
+            popup : $('.wechat-qr'),
+            position : 'left center'
+        });
+
+        var qrcode = new QRCode(document.getElementById("qrcode"), {
+            // 此处网址要改为自己博客的网址，后续修改
+            text: "https://gitee.com/SKG_XSN",
+            width: 100,
+            height: 100,
+            colorDark : "#000000",
+            colorLight : "#ffffff",
+            correctLevel : QRCode.CorrectLevel.H
+        });
+    </script>
+
+
+<!--&lt;!&ndash; 背景动画 &ndash;&gt;-->
+<!--<script src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>-->
+<!--<script type="text/javascript" color="0, 0, 255" opacity='0.8' zIndex="-2" count="180"-->
+</body>
+</html>

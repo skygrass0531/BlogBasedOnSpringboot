@@ -1,0 +1,8 @@
+spring:
+  thymeleaf:
+    mode: HTML5
+  profiles:
+    active: dev
+# 使 thymeleaf 模板可以加载出静态资源
+spring.mvc.static-path-pattern: /static/**
+
